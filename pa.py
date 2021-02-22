@@ -30,6 +30,14 @@ def jieba_cloud(file_name, icon):
             icon_name = ''
         elif icon == "2":
             icon_name = "fas fa-dragon"
+        elif icon == "3":
+            icon_name = "fas fa-dog"
+        elif icon == "4":
+            icon_name = "fas fa-cat"
+        elif icon == "5":
+            icon_name = "fas fa-dove"
+        elif icon == "6":
+            icon_name = "fab fa-qq"
         pic = str(icon) + '.png'
         if icon_name is not None and len(icon_name) > 0:
             gen_stylecloud(text=result, icon_name=icon_name, font_path='simsun.ttc', output_name=pic)
@@ -43,3 +51,7 @@ if __name__ == '__main__':
     spider_comment(movie_id, page)
     jieba_cloud("douban.txt", "1")
     jieba_cloud("douban.txt", "2")
+    jieba_cloud("douban.txt", "3")
+    jieba_cloud("douban.txt", "4")
+    jieba_cloud("douban.txt", "5")
+    jieba_cloud("douban.txt", "6")
