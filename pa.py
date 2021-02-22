@@ -9,7 +9,7 @@ headers = {
 }
 def jieba_cloud(file_name):
     with open(file_name, 'r', encoding='utf8') as f:
-        word_list = jieba.cut(f.read(),cut_all=True)
+        word_list = jieba.cut(f.read())
 
         result = " ".join(word_list)   
         # 制作中文词云
